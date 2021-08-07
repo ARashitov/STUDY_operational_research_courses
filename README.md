@@ -1,4 +1,4 @@
-# **operational_research_courses**
+# **STUDY_operational_research_courses**
 
 Project with learning materials and assignments for operational research courses:
 1. [Operations Research (1): Models and Applications](https://www.coursera.org/learn/operations-research-modeling)
