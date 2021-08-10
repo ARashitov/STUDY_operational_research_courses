@@ -2,11 +2,12 @@ version: '3'
 services:
 
   jupyter-notebook:
-    image: atmosphere4u/ml-environment:0.0.3
+    image: atmosphere4u/ml-environment:0.1.0
     ports:
       - 8888:8888
     volumes:
       - ./notebooks:/WORKDIR/notebooks
       - ./data:/WORKDIR/data
       - ./models:/WORKDIR/models
+    command: jupyter-notebook --no-browser --allow-root --ip 0.0.0.0 --port 8888 --NotebookApp.password=sha1:66110f2becd5:7937f0b164427383a38967456a5ca45038e90905
     restart: always
